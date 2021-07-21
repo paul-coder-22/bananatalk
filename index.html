@@ -9,16 +9,24 @@
 </head>
 
 <body>
-
-    <button onclick="getButton()">Click</button>
-
-
+    <textarea name="" id="text" class="input" cols="30" rows="10"></textarea>
+    <button id="btn">Click</button>
+    <script src="app.js"></script>
 </body>
-<script>
-    function getButton() {
-        let username = prompt();
-        alert(username)
+<style>
+    textarea {
+        width: 60%;
+        height: 20%;
+        display: block;
+        margin: 1rem;
+        padding: 1rem;
     }
-</script>
+
+    .input:focus {
+        outline: none !important;
+        border-color: 1px solid #80bdff;
+        box-shadow: 0 0 10px #719ECE;
+    }
+</style>
 
 </html>
