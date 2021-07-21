@@ -6,4 +6,7 @@
 document.getElementById("btn").addEventListener("click", () => {
     console.log(document.getElementById("text").value);
 
-})
+});
+
+let textarea = document.getElementById("text")
+console.log(textarea);

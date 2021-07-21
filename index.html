@@ -8,9 +8,16 @@
     <title>Banana | Talk</title>
 </head>
 
-<body>
-    <textarea name="" id="text" class="input" cols="30" rows="10"></textarea>
+<body
+    background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdrcJYGrpT6EFBx3d8ONAberQ9cQFd66fAtQdimxWg1N6f-fmcgE-uc0SUi786UOpKTR8&usqp=CAU">
+    <div class="text-area-center">
+        <textarea name="" id="text" class="input" cols="30" rows="10"></textarea>
+    </div>
     <button id="btn">Click</button>
+
+    <div></div>
+
+
     <script src="app.js"></script>
 </body>
 <style>
@@ -18,8 +25,22 @@
         width: 60%;
         height: 20%;
         display: block;
-        margin: 1rem;
+        /* margin: 1rem; */
+        margin-left: auto;
+        margin-right: auto;
         padding: 1rem;
+    }
+
+    #btn {
+        width: 20%;
+        height: 50px;
+        /* margin-left: 40%;
+        margin-right: 30%; */
+        margin: 2% 30% 5% 40%;
+    }
+
+    .text-area-center {
+        align-items: center;
     }
 
     .input:focus {
