@@ -8,17 +8,46 @@
     <title>Banana | Talk</title>
 </head>
 
-<body>
+<body
+    background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdrcJYGrpT6EFBx3d8ONAberQ9cQFd66fAtQdimxWg1N6f-fmcgE-uc0SUi786UOpKTR8&usqp=CAU">
+    <div class="text-area-center">
+        <textarea name="" id="text" class="input" cols="30" rows="10"></textarea>
+    </div>
+    <button id="btn">Click</button>
 
-    <button onclick="getButton()">Click</button>
+    <div></div>
 
 
+    <script src="app.js"></script>
 </body>
-<script>
-    function getButton() {
-        let username = prompt();
-        alert(username)
+<style>
+    textarea {
+        width: 60%;
+        height: 20%;
+        display: block;
+        /* margin: 1rem; */
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1rem;
     }
-</script>
+
+    #btn {
+        width: 20%;
+        height: 50px;
+        /* margin-left: 40%;
+        margin-right: 30%; */
+        margin: 2% 30% 5% 40%;
+    }
+
+    .text-area-center {
+        align-items: center;
+    }
+
+    .input:focus {
+        outline: none !important;
+        border-color: 1px solid #80bdff;
+        box-shadow: 0 0 10px #719ECE;
+    }
+</style>
 
 </html>
