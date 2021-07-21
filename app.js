@@ -1,12 +1,4 @@
-/* let text = document.getElementById("btn").addEventListener("click", () => {
-    alert("Hello world");
-}) */
-// console.log(text)
-
 document.getElementById("btn").addEventListener("click", () => {
-    console.log(document.getElementById("text").value);
-
+    let textareaValue = document.getElementById("text").value;
+    document.getElementById("output").innerText = textareaValue;
 });
-
-let textarea = document.getElementById("text")
-console.log(textarea);
