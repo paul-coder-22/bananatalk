@@ -1,1 +1,7 @@
-GET https://jsonplaceholder.typicode.com/todos
+GET https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json
+
+Content-Type: application/json
+
+{
+    "text":"paul"
+}
