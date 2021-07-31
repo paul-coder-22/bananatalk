@@ -5,24 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/fb676f87ae.js" crossorigin="anonymous"></script>
     <title>Banana | Talk</title>
 </head>
 
-<body
-    background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdrcJYGrpT6EFBx3d8ONAberQ9cQFd66fAtQdimxWg1N6f-fmcgE-uc0SUi786UOpKTR8&usqp=CAU">
-    <div class="text-area-center">
-        <textarea name="" id="text" class="input" placeholder="Put your text here..." cols="30" rows="10"></textarea>
+<body background="  ">
+    <section class="hedaer">
+        <nav>
+            <h2>Banana talk</h2>
+            <div class="nav-link">
+                <ul>
+                    <li><a href=""><i class="fab fa-github fa-2x"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin-in fa-2x"></i></a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </section>
+    <h1>Text Area</h1>
+    <!-- <tr><i class="fas fa-envelope-open-text social-ic"></i></tr> -->
+    <div class="text-box">
+        <div class="text-area-center">
+            <textarea name="" id="text" class="input" placeholder="Put your text here..." cols="20" rows="5"></textarea>
+            <button id="btn">Translate Text</button>
+            <!-- <div id="output">Hello</div> -->
+        </div>
     </div>
-    <button id="btn">Click</button>
 
-    <div id="output"></div>
-
-
-    <script src="app.js"></script>
+    <div id="output">Waiting to translate...</div>
+    <section class="footer">
+        <h4>About App</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, fugit at natus fuga adipisci repellendus
+            repellat expedita numquam omnis cupiditate corrupti ducimus ea sit, placeat ipsa ullam dolore! Sequi,
+            dolorem!</p>
+        <!-- <hr> -->
+        <hr style="width:50%" , size="1" , color=black>
+        <p>Made with ❤ Happy Coding</p>
+    </section>
 </body>
+<script src="app.js"></script>
 <style>
     /* styling  textarea */
-    textarea {
+    /*     textarea {
         width: 60%;
         height: 20%;
         display: block;
@@ -39,10 +67,10 @@
         outline: none !important;
         border-color: 1px solid #80bdff;
         box-shadow: 0 0 10px #719ECE;
-    }
+    } */
 
     /* styling button */
-    #btn {
+    /*     #btn {
         width: 20%;
         height: 50px;
         border-radius: 2%;
@@ -58,7 +86,7 @@
         margin-right: auto;
         padding: 1rem;
         border: 1px solid red;
-    }
+    } */
 </style>
 
 </html>

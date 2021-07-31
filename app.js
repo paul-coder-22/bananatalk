@@ -5,11 +5,15 @@ document.getElementById("btn").addEventListener("click", () => {
     let textareaValue = document.getElementById("text").value;
     fetch(getTranslationUrl(textareaValue))
         .then(e => e.json())
-        .then(v => document.getElementById("output").innerText = v.contents.translated)
+        .then(v => {
+            console.log(v.contents.translated)
+            console.log(document.getElementById("output"))
+            document.getElementById("output").innerText = v.contents.translated
+        })
         .catch(e => console.log("error in the serve !!!"))
-
 });
 
 function getTranslationUrl(text) {
+
     return serverUrl + "?" + "text=" + text;
 }
