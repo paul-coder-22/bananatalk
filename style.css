@@ -43,6 +43,7 @@ nav{
     height: 2px;
     background: #000;
     display: block;
+    margin: auto;
     transition: 0.5s;
 }
 
