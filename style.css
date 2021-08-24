@@ -4,13 +4,20 @@
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
+
+:root{
+    --backgroundColor: #f2c94c;
+    --black : #000; 
+    --white : #fff;
+    --error : red;
+}
 .hedaer{
     min-height: 10vh;
     width: 100%;
     /* background-image: linear-gradient(#1c1d21,rgba(0, 10, 53, 0.7)); */
     position: relative;
-    border-bottom: 2px solid #000;
-    background-color: #F2C94C;
+    border-bottom: 2px solid var(--black);
+    background-color: var(--backgroundColor);
 }
 nav{
     display: flex;
@@ -32,7 +39,7 @@ nav{
 }
 
 .nav-link ul li a{
-    color: #000;
+    color: var(--black);
     text-decoration: none;
     font-size: 15px;
 }
@@ -41,7 +48,7 @@ nav{
     content: '';
     width: 0%;
     height: 2px;
-    background: #000;
+    background: var(--black);
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -53,7 +60,7 @@ nav{
 }
 
 .text-box{
-    color: #fff;
+    color: var(--black);
     position: relative;
     height: 24rem;
     overflow: hidden;
@@ -88,8 +95,10 @@ h1{
     border-top-right-radius: 10%;
     border-top-left-radius: 5%;
     border-bottom-right-radius: 5%;
-    border: 1px dashed yellow ;
+    border: 1px dashed var(--backgroundColor);
     transition: 0.5ms;
+    font-weight: 800;
+    background: var(--backgroundColor);
 
 }
 .text-box #btn:hover{
@@ -105,11 +114,16 @@ h1{
     padding-top: -  5%;
     display: inline-block;
     position: absolute;
-    border: 1px dashed rgb(0, 0, 0);
+    border: 1px dashed var(--black);
     left: 25%;
     bottom: 18%;
 }
-
+.errorText{
+    text-align: center;
+    color: var(--error);
+    font-size: 1.4rem;
+    display: none;
+}
 @media screen and (max-width: 600px) {
    #output{
        bottom: 26%;
@@ -130,6 +144,6 @@ hr{
     width: 100%;
     text-align: center;
     padding: 30px 0;
-    background-color: #F2C94C;
+    background-color: var(--backgroundColor);
 }
 
