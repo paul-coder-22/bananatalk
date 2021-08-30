@@ -2,7 +2,7 @@
 const serverUrl = "https://api.funtranslations.com/translate/minion.json";
 
 const errorText = document.querySelector('.errorText');
-
+errorText.style.display = "none"
 
 document.querySelector("#btn").addEventListener("click", () => {
 
